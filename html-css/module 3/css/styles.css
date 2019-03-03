@@ -1,0 +1,90 @@
+body {
+    font-family: 'Playfair Display', 'Arial', serif;
+    font-size: 0px;
+    color: #626262;
+    margin: auto;
+    text-align: center;
+    width: 901px;
+}
+
+
+nav {
+    text-align: center;
+    margin-top: 70px;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+li  {
+    display: inline;
+}
+
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #626262;
+    font-size: 14px;
+    line-height: 1.714;
+    padding: 40px;
+}
+
+a:hover {
+    color: #03a9f4;
+}
+
+.box {
+    display: inline-block;
+    max-width: 420px;
+    margin-top: 114px;
+}
+
+.box:nth-child(2n) {
+    margin-left: 61px;
+}
+
+p.intro {
+    font-family: 'Ubuntu', 'Arial', serif;
+    font-weight: lighter;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    font-size: 14px;
+}
+
+p.content {
+    line-height: 1.714;
+    text-align: left;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+section {
+    margin: auto;
+}
+
+.button-more {
+    border-width: 1px;
+    border-color: #dddcd7;
+    border-style: solid;
+    font-size: 20px;
+    background-color: Transparent;
+    margin: 55px 0 70px;
+    /* padding: 15px 25px; */
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  button a {
+    text-decoration: none;
+    color: #626262;
+  }
+  
