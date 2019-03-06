@@ -1,48 +1,89 @@
+html{
+    box-sizing:border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header-top {
+    padding-top:  72px ;
+    text-align: center;
+}
+
 body {
     font-family: 'Playfair Display', 'Arial', serif;
-    font-size: 0px;
     color: #626262;
+    font-size: 14px;
     margin: auto;
-    text-align: center;
-    width: 901px;
+    text-align: left;
 }
 
-
-nav {
-    text-align: center;
-    margin-top: 69px;
+.nav-list {
+    display: inline-block;
 }
-
-ul {
-    padding-inline-start: 0;
-}
-
-li  {
-    display: inline;
-}
-
 
 li a {
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     color: #626262;
     font-size: 14px;
     line-height: 1.714;
-    padding: 40px;
 }
 
 a:hover {
     color: #03a9f4;
 }
 
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
 .box {
     display: inline-block;
     max-width: 420px;
-    margin-top: 114px;
+    margin-top: 127px;
 }
 
-.box:nth-child(2n) {
-    margin-left: 61px;
+.box:nth-child(-n+2) {
+    margin-top: 50px;
+}
+
+.box:nth-child(odd) {
+    margin-right: 50px;
+}
+
+.photo {
+    margin-bottom: 31px;
 }
 
 p.intro {
@@ -51,26 +92,21 @@ p.intro {
     color: #b4ad9e;
     text-transform: uppercase;
     line-height: 1.2;
-    text-align: left;
-    font-size: 14px;
-    margin-top: 24px;
+    margin: 0;
+    margin-bottom: 26px;
 }
 
 p.content {
     line-height: 1.714;
-    text-align: left;
-    font-size: 14px;
 }
 
 h2 {
     font-size: 30px;
     line-height: 1.2;
-    text-align: left;
+    margin: 0;
+    margin-bottom: 29px;
 }
 
-section {
-    margin: auto;
-}
 
 .button-more {
     border-width: 1px;
@@ -84,7 +120,7 @@ section {
     text-align: center;
   }
 
-  button a {
+button a {
     text-decoration: none;
     color: #626262;
   }
