@@ -33,11 +33,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.header-top {
-    padding-top:  72px ;
-    text-align: center;
-}
-
 body {
     font-family: 'Playfair Display', 'Arial', serif;
     color: #626262;
@@ -46,40 +41,71 @@ body {
     text-align: left;
 }
 
-.nav-list {
-    display: inline-block;
+.header-top {
+    padding-top:  72px ;
+    text-align: center;
+    padding-bottom: 50px;
 }
 
-li a {
+.navigation {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.nav-list {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    color: #626262;
     font-size: 14px;
     line-height: 1.714;
 }
+
+ .nav-list:not(:last-child) {
+    margin-right: 65px;
+ }
+
+ .nav-link {
+    text-decoration: none;
+    color: #626262;
+ }
 
 a:hover {
     color: #03a9f4;
 }
 
-.container {
+.wrapper {
     width: 900px;
     margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.sec {
+    font-size: 0px;
+}
+
+.main-list {
+    display: inline-block;
+}
+
+.main-ul {
+    padding: 0; 
 }
 
 .box {
     display: inline-block;
     max-width: 420px;
-    margin-top: 127px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 137px;
 }
 
-.box:nth-child(-n+2) {
-    margin-top: 50px;
+.box:nth-last-of-type(-n+2) {
+    margin-bottom: 55px;
 }
 
-.box:nth-child(odd) {
-    margin-right: 50px;
+.main-list:nth-of-type(odd) {
+    margin-right: 60px;
 }
 
 .photo {
@@ -92,11 +118,17 @@ p.intro {
     color: #b4ad9e;
     text-transform: uppercase;
     line-height: 1.2;
+    font-size: 14px;
     margin: 0;
+    padding: 0;
     margin-bottom: 26px;
 }
 
 p.content {
+    margin: 0;
+    padding: 0;
+    /* margin-bottom: 137px; */
+    font-size: 14px;
     line-height: 1.714;
 }
 
@@ -104,24 +136,22 @@ h2 {
     font-size: 30px;
     line-height: 1.2;
     margin: 0;
+    padding: 0;
     margin-bottom: 29px;
 }
-
 
 .button-more {
     border-width: 1px;
     border-color: #dddcd7;
     border-style: solid;
     font-size: 20px;
-    background-color: Transparent;
-    margin: 55px 0 70px;
+    background-color: transparent;
     padding: 17px 34px;
     line-height: 1.2;
     text-align: center;
-  }
-
-button a {
-    text-decoration: none;
+    margin: 0 auto;
+    display: block;
     color: #626262;
   }
   
+  /* http://prntscr.com/muav64 */
