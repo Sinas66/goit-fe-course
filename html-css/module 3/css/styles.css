@@ -70,26 +70,25 @@ body {
     color: #626262;
  }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     color: #03a9f4;
 }
 
 .wrapper {
     width: 900px;
     margin: 0 auto;
-    margin-bottom: 70px;
 }
 
 .sec {
     font-size: 0px;
+    padding-bottom: 70px;
 }
 
-.main-list {
-    display: inline-block;
-}
 
 .main-ul {
-    padding: 0; 
+    padding: 0;
+    margin-bottom: 55px;
 }
 
 .box {
@@ -97,12 +96,16 @@ a:hover, a:focus {
     max-width: 420px;
     margin: 0;
     padding: 0;
-    margin-bottom: 137px;
+    /* margin-bottom: 137px; */
 }
 
-.box:nth-last-of-type(-n+2) {
-    margin-bottom: 55px;
+.main-list {
+    display: inline-block;
 }
+
+.main-list:not(:nth-last-child(-n+2)) {
+    margin-bottom: 137px;
+  }
 
 .main-list:nth-of-type(odd) {
     margin-right: 60px;
