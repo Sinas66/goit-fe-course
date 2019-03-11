@@ -5,6 +5,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: "Roboto", "Arial", serif;
 }
 
 *,
@@ -33,14 +34,13 @@ img {
 .logo {
   float: left;
   display: block;
-  font-family: "Roboto", "Arial", serif;
+  /* font-family: "Roboto", "Arial", serif; */
   text-decoration: none;
   text-transform: uppercase;
   color: #555252;
   line-height: 1.067;
   font-size: 30px;
   font-weight: 300;
-  
 }
 
 .logo::first-letter {
@@ -52,30 +52,27 @@ img {
   color: #1abc9c;
 }
 
-
 .list {
   width: 490px;
   float: right;
-  margin-top: 9px;
+  margin-top: 7px;
 }
-/* .nav  {
-  float: right;
-} */
-
-/* .menu-link {
-display: block;
-} */
 
 .menu-list {
   display: block;
   float: left;
 }
+
+.menu-list:not(:last-of-type) {
+  padding-right: 34px;
+}
+
 .menu-link {
   font-size: 14px;
   font-family: "Open sans", "Arial", serif;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  line-height: 0.786;
   font-weight: bold;
   color: #0f0101;
 }
@@ -83,9 +80,26 @@ display: block;
 .menu-link:hover {
   color: #1abc9c;
 }
-/* .menu-list {
+
+header {
+  margin-bottom: 104px;
+}
+
+h2 {
   text-align: center;
-} */
-.menu-list:not(:last-of-type) {
-  padding-right: 34px;
+  font-size: 48px;
+  text-transform: uppercase;
+  line-height: 0.667;
+  font-weight: 900;
+  color: #515151;
+}
+
+h2::after {
+  content: "" ;
+  display: block;
+  margin: 0 auto;
+  margin-top: 32px;
+  width: 164px;
+  height: 7px;
+  background: #1abc9c;
 }
