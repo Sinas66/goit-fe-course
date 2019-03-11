@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  max-width: 1110px;
+}
+
+.logo {
+  float: left;
+  display: block;
+}
+
+
+/* .nav  {
+  float: right;
+} */
+
+/* .menu-link {
+display: block;
+} */
+
+/* .menu-list {
+  display: block;
+} */
