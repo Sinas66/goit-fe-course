@@ -26,14 +26,38 @@ img {
 
 .wrapper {
   max-width: 1110px;
+  margin: 0 auto;
+  margin-top: 37px;
 }
 
 .logo {
   float: left;
   display: block;
+  font-family: "Roboto", "Arial", serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #555252;
+  line-height: 1.067;
+  font-size: 30px;
+  font-weight: 300;
+  
+}
+
+.logo::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
+}
+
+.logo:hover {
+  color: #1abc9c;
 }
 
 
+.list {
+  width: 490px;
+  float: right;
+  margin-top: 9px;
+}
 /* .nav  {
   float: right;
 } */
@@ -42,6 +66,26 @@ img {
 display: block;
 } */
 
-/* .menu-list {
+.menu-list {
   display: block;
+  float: left;
+}
+.menu-link {
+  font-size: 14px;
+  font-family: "Open sans", "Arial", serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #0f0101;
+}
+
+.menu-link:hover {
+  color: #1abc9c;
+}
+/* .menu-list {
+  text-align: center;
 } */
+.menu-list:not(:last-of-type) {
+  padding-right: 34px;
+}
