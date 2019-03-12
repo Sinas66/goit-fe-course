@@ -13,8 +13,28 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 img {
-  display: block;
+  /* display: block; */
   max-width: 100%;
   height: auto;
 }
@@ -28,7 +48,7 @@ img {
 .wrapper {
   max-width: 1110px;
   margin: 0 auto;
-  margin-top: 37px;
+  padding-top: 37px;
 }
 
 .logo {
@@ -92,10 +112,11 @@ h2 {
   line-height: 0.667;
   font-weight: 900;
   color: #515151;
+  margin-bottom: 92px;
 }
 
 h2::after {
-  content: "" ;
+  content: "";
   display: block;
   margin: 0 auto;
   margin-top: 32px;
@@ -103,3 +124,157 @@ h2::after {
   height: 7px;
   background: #1abc9c;
 }
+
+.product_ul {
+  display: inline-block;
+  font-size: 0px;
+}
+
+/* FLOAT */
+.products {
+  margin-bottom: 103px;
+}
+
+.product_list {
+  width: 255px;
+  height: 322px;
+  background-color: #e8effc;
+  float: left;
+  /* display: inline-block; */
+  vertical-align: top;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.product_list:nth-child(4n + 1) {
+  margin-left: 0;
+}
+.product_list:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
+
+.img_wrapper {
+  height: 282px;
+  text-align: center;
+}
+
+.img_prod {
+  max-height: 246px;
+  object-fit: cover;
+  margin: 0 auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.img_wrapper::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.product_about {
+  background-color: #323232;
+  height: 40px;
+}
+
+.about {
+  float: left;
+  padding-left: 14px;
+}
+
+.about_s {
+  background-color: #8c8c8c;
+  float: right;
+  text-align: center;
+  width: 54px;
+  height: 100%;
+}
+
+.about,
+.about_s {
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1.778;
+  font-weight: 900;
+  padding-top: 4px;
+}
+
+.product_list:hover .product_about {
+  background: #1abc9c;
+}
+
+.product_list:hover .about_s {
+  background: #7fd9c7;
+}
+
+/* BLOG */
+
+.blog {
+  float: left;
+  width: 350px;
+  margin-bottom: 45px;
+  margin-bottom: 30px;
+}
+
+.blog:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
+.blog:nth-child(4n) {
+  margin-left: 0;
+
+}
+
+.blog_img {
+  width: 350px;
+  height: 261px;
+  margin-bottom: 14px;
+}
+
+.blog_about {
+  font-size: 18px;
+  font-family: "Open sans", "Arial", serif;
+  color: #555252;
+  line-height: 1.444;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.blog_about::after {
+  content: "";
+  display: block;
+  margin-top: 11px;
+  width: 136px;
+  height: 3px;
+  background: #1abc9c;
+}
+
+.blog_p {
+  font-family: "Open sans", "Arial", serif;
+  color: #555252;
+  line-height: 1.857;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.read {
+  font-family: "Open sans", "Arial", serif;
+  font-size: 16px;
+  line-height: 1.625;
+  width: 160px;
+  height: 51px;
+  background: #4ec6ab;
+  border: none;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.read:hover {
+  background: #7fd9c7;
+}
+
+/* hover на ли, див или а? */
+/* почему ездит верстка? */
