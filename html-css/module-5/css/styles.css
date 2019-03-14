@@ -168,6 +168,12 @@ input[type="radio"].visually-hidden {
 /* Collection */
 /* HOVER */
 
+.main {
+  background-color: #e9f0fd;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .collection_hover {
   height: 282px;
   width: 255px;
@@ -313,6 +319,7 @@ input[type="radio"].visually-hidden {
   height: 40px;
   width: 100%;
 }
+
 
 .about {
   float: left;
