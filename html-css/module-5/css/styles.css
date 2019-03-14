@@ -108,7 +108,7 @@ input[type="radio"].visually-hidden {
 
 .slider {
   height: 602px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
     url(../img/Slider.jpg);
   background-size: cover;
   position: relative;
