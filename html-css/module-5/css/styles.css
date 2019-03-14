@@ -167,6 +167,7 @@ input[type="radio"].visually-hidden {
 
 /* Collection */
 /* HOVER */
+
 .collection_hover {
   height: 282px;
   width: 255px;
@@ -290,6 +291,9 @@ input[type="radio"].visually-hidden {
 .product_list:nth-last-child(-n + 4) {
   margin-bottom: 0;
 }
+.product_list a {
+  display: block;
+}
 
 .img_prod {
   object-fit: cover;
@@ -308,10 +312,6 @@ input[type="radio"].visually-hidden {
   background-color: #323232;
   height: 40px;
   width: 100%;
-}
-
-a.test {
-  height: 40px;
 }
 
 .about {
