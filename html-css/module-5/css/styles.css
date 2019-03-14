@@ -310,6 +310,7 @@ input[type="radio"].visually-hidden {
 
 .product {
   position: relative;
+  height: 322px;
 }
 
 .product_about {
