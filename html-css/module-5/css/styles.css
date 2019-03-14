@@ -109,7 +109,7 @@ input[type="radio"].visually-hidden {
 .slider {
   height: 602px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/img/Slider.jpg);
+    url(img/Slider.jpg);
   background-size: cover;
   position: relative;
   background-position: center;
@@ -118,7 +118,7 @@ input[type="radio"].visually-hidden {
 
 .slider:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(/img/Slider.jpg);
+    url(img/Slider.jpg);
 }
 
 .con_slider {
@@ -204,19 +204,19 @@ input[type="radio"].visually-hidden {
 
 .heart {
   left: 0;
-  background-image: url(/img/heart.png);
+  background-image: url(img/heart.png);
 }
 
 .arrow {
   left: 0;
   right: 0;
   margin: 0 auto;
-  background-image: url(/img/arrow.png);
+  background-image: url(img/arrow.png);
 }
 
 .clock {
   right: 0;
-  background-image: url(/img/clock.png);
+  background-image: url(img/clock.png);
 }
 
 .market {
@@ -227,7 +227,7 @@ input[type="radio"].visually-hidden {
   bottom: 0;
   left: 0;
   background-color: #323232;
-  background-image: url(/img/market.png);
+  background-image: url(img/market.png);
   background-repeat: no-repeat;
   background-position: 7px;
 }
