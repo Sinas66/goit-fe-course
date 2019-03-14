@@ -48,14 +48,12 @@ input[type="radio"].visually-hidden {
 .logo {
   float: left;
   display: block;
-  /* font-family: "Roboto", "Arial", serif; */
   text-decoration: none;
   text-transform: uppercase;
   color: #555252;
   line-height: 1.067;
   font-weight: 300;
   font-size: 30px;
-  font-weight: 300;
 }
 
 .logo::first-letter {
@@ -73,13 +71,17 @@ input[type="radio"].visually-hidden {
   margin-top: 7px;
 }
 
-.menu-list {
+.menu_list {
   display: block;
   float: left;
 }
 
-.menu-list:not(:last-of-type) {
-  padding-right: 34px;
+.menu_list:not(:last-of-type) {
+  margin-right: 34px;
+}
+
+.menu_list a {
+  display: block;
 }
 
 .menu-link {
@@ -113,7 +115,11 @@ input[type="radio"].visually-hidden {
   background-size: cover;
   position: relative;
   background-position: center;
-  margin-bottom: 98px;
+  /* margin-bottom: 98px; */
+}
+
+.collection {
+  padding-top: 98px;
 }
 
 .slider:hover {
@@ -198,6 +204,7 @@ input[type="radio"].visually-hidden {
   border: #fff solid 1px;
   position: absolute;
   top: 0;
+  background: transparent;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -230,10 +237,6 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/market.png);
   background-repeat: no-repeat;
   background-position: 7px;
-}
-
-
-.market_p {
   font-size: 14px;
   text-transform: uppercase;
   line-height: 50px;
