@@ -34,7 +34,6 @@ input[type="radio"].visually-hidden {
 }
 
 img {
-  /* display: block; */
   max-width: 100%;
   height: auto;
 }
@@ -141,7 +140,6 @@ h2::after {
   height: 322px;
   background-color: #e8effc;
   float: left;
-  /* display: inline-block; */
   vertical-align: top;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -152,6 +150,10 @@ h2::after {
 }
 .product_list:nth-last-child(-n + 4) {
   margin-bottom: 0;
+}
+
+.product_list a {
+  display: block;
 }
 
 .img_wrapper {
