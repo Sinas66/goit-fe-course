@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: "Roboto", "Arial", serif;
+}
+
+.header {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    max-width: 1090px;
+}
+
+.ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.nav_item  {
+    list-style: none;
+    margin-right: 55px;
+}
+
+.nav_item:nth-last-of-type(1)
+ {
+    margin-right: 0px;
+}
+/* HEADER LINK */
+.logo,
+.nav_a {
+    font-family: "Montserrat", "Arial", serif;
+    text-decoration: none;
+    color: #95e1d3;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav_a {
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+}
+
+/* HEADER HOVER */
+.logo:hover,
+.nav_a:hover {
+    color: #f38181;
+}
+
+.logo:hover:after,
+.nav_a:hover::after {
+    content: "";
+    background-color: #f38181;
+    width: 100%;
+    height: 3px;
+    margin-top: 9px;
+    display: block;
+    position: absolute;
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.amazing_list {
+    padding-top: 162px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.h2 {
+    font-family: "Montserrat", "Arial", serif;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.h2::before {
+    font-family: "Kaushan Script","Arial", serif;
+   text-transform: none;
+    font-size: 24px;
+    content: "We work with";
+    position: absolute;
+    top: -42px;
+    left: 0;
+    right: 0;
+}
+
+.h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+
+.amazing_item {
+display: flex;
+width: 380px;
+}
+.amazing_wrapper {
+    flex-basis: 380px;
+}
+
+
+
+
+.team_section {
+    padding-top: 174px;
+}
