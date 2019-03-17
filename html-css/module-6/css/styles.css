@@ -255,6 +255,11 @@
   display: block;
   background-color: #fce38a;
   position: relative;
+  transition: background-color .3s linear;
+}
+
+.team_social_a:hover {
+  background-color: #95e1d3;
 }
 
 .team_social_img {
