@@ -229,7 +229,7 @@
 }
 
 .team_hover {
-  opacity: 1;
+  opacity: 0;
   background-image: linear-gradient(
     rgba(252, 227, 138, 0.9),
     rgba(243, 129, 129, 0.9)
@@ -338,4 +338,8 @@
   font-weight: 700px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.footer_button:hover {
+  background-color: #f38181;
 }
