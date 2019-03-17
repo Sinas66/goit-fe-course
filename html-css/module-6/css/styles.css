@@ -338,6 +338,7 @@
   font-weight: 700px;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .footer_button:hover {
