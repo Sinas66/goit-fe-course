@@ -97,6 +97,7 @@
 .main {
   display: flex;
   flex-direction: column;
+  margin-bottom: 82px;
 }
 
 .amazing_section {
@@ -186,7 +187,7 @@
 /* OUR TEAM */
 
 .team_section {
-  margin-bottom: 82px;
+  /* margin-bottom: 82px; */
 }
 
 .meet_team {
@@ -218,10 +219,6 @@
 }
 
 /* TEAM HOVER */
-
-/* .team_list:hover .team_img{
-  transform: translate(-10px, -10px);
- } */
 
 .team_img_wrapper:hover .test {
   transform: translate(-10px, -10px);
