@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-content: flex-end;
+  margin-bottom: 162px;
 }
 
 .nav {
@@ -101,7 +102,6 @@
 }
 
 .amazing_section {
-  padding-top: 162px;
   display: flex;
   flex-direction: column;
   margin-bottom: 133px;
