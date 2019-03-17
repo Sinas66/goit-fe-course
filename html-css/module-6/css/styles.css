@@ -229,7 +229,7 @@
 }
 
 .team_hover {
-  opacity: 0;
+  opacity: 1;
   background-image: linear-gradient(
     rgba(252, 227, 138, 0.9),
     rgba(243, 129, 129, 0.9)
@@ -240,7 +240,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.4s linear .3s;
+  transition: opacity 0.4s linear 0.3s;
 }
 
 .team_social {
@@ -255,7 +255,7 @@
   display: block;
   background-color: #fce38a;
   position: relative;
-  transition: background-color .3s linear;
+  transition: background-color 0.3s linear;
 }
 
 .team_social_a:hover {
