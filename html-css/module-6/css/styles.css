@@ -223,14 +223,20 @@
   transform: translate(-10px, -10px);
  } */
 
-.team_img_wrapper:hover .team_hover,
-.team_img_wrapper:hover .team_img {
+.team_img_wrapper:hover .test {
   transform: translate(-10px, -10px);
+}
+
+.team_img_wrapper:hover .team_hover {
   opacity: 1;
 }
 
+.test {
+  transition: transform 0.3s linear;
+}
+
 .team_hover {
-  opacity: 0.2;
+  opacity: 0;
   background-image: linear-gradient(
     rgba(252, 227, 138, 0.9),
     rgba(243, 129, 129, 0.9)
@@ -241,7 +247,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s linear, opacity 0.3s linear;
+  transition: opacity 0.4s linear .3s;
 }
 
 .team_social {
