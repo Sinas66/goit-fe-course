@@ -225,11 +225,12 @@
 
 .team_img_wrapper:hover .team_hover,
 .team_img_wrapper:hover .team_img {
-  display: flex;
   transform: translate(-10px, -10px);
+  opacity: 1;
 }
 
 .team_hover {
+  opacity: 0.2;
   background-image: linear-gradient(
     rgba(252, 227, 138, 0.9),
     rgba(243, 129, 129, 0.9)
@@ -240,8 +241,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
-  transition: transform 0.2s linear;
+  transition: transform 0.3s linear, opacity 0.3s linear;
 }
 
 .team_social {
