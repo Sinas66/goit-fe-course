@@ -27,6 +27,7 @@ body {
   font-family: "WisdomScript", "serif";
   text-decoration: none;
   color: #fed136;
+  display: block;
 }
 
 .nav {
@@ -48,6 +49,7 @@ body {
   font-size: 0.875rem;
   text-transform: uppercase;
   transition: color 0.2s linear;
+  display: block;
 }
 
 .nav_a:hover {
