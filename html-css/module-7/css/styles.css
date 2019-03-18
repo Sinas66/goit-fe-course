@@ -172,6 +172,7 @@ body {
   width: 455px;
   display: flex;
   flex-direction: column;
+  max-width: 455px;
 }
 
 .input {
