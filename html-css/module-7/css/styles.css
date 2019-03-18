@@ -195,6 +195,10 @@ body {
   border: red 2px solid;
 }
 
+.textarea:invalid {
+  border: red 2px solid;
+}
+
 ::-webkit-input-placeholder {
   font-weight: 700;
   text-transform: uppercase;
