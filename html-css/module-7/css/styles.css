@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: red 1px solid;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Montserrat", "serif";
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
+  margin-bottom: 119px;
+}
+
+.logo {
+  font-size: 1.625rem;
+  font-family: "WisdomScript", "serif";
+  text-decoration: none;
+  color: #fed136;
+}
+
+.nav {
+  align-self: flex-end;
+}
+.nav_ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav_li:not(:nth-last-of-type(1)) {
+  margin-right: 41px;
+}
+
+.nav_a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  transition: color 0.2s linear;
+}
+
+.nav_a:hover {
+  color: #fed136;
+}
+
+/* MAIN */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.services_p,
+.footer_p {
+  color: #777777;
+  text-align: center;
+  font-family: "DroidSerif", "serif";
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+.services_ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.services_li {
+  width: 274px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services_icon {
+  width: 74px;
+  height: 73px;
+  margin-bottom: 26px;
+}
+
+.icon_1 {
+  background-image: url(../img/icon1.png);
+}
+
+.icon_2 {
+  background-image: url(../img/icon2.png);
+}
+
+.icon_3 {
+  background-image: url(../img/icon3.png);
+}
+
+.services_h3 {
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+.services_list_p {
+  font-family: "Roboto", "serif";
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* FOOTER */
+.wrapper_vh {
+  width: 100vw;
+  background-color: #222222;
+  position: relative;
+  padding-top: 109px;
+  padding-bottom: 115px;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-position: right bottom 20px;
+}
+
+/* .map {
+  background: url(../img/map.png) no-repeat;
+  height: 537px;
+  width: 100%;
+  position: absolute;
+  top: 128px;
+  background-position: right bottom;
+} */
+
+.footer_h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.footer_p {
+  margin-bottom: 76px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 940px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 29px;
+  height: 212px;
+  width: 100%;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.form_input {
+  width: 455px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  
+}
+
+::-webkit-input-placeholder {
+  padding: 18px 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #bbbbbb;
+  font-size: 0.875rem;
+}
+
+.textarea {
+  width: 100%;
+  height: 211px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #bbbbbb;
+  font-size: 0.875rem;
+}
+
+.sumbit_button {
+  width: 240px;
+  height: 66px;
+  background-color: #fed136;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+}
