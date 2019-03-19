@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper header_wrapper">
       <!-- HEADER -->
       <header class="header">
         <a href="#" class="logo">Golden</a>
@@ -24,85 +24,96 @@
           </ul>
         </nav>
       </header>
-      <main class="main">
-        <h1 class="visually-hidden">HIDDEN TITLE</h1>
-        <h2 class="h2 services">Services</h2>
-        <p class="services_p">Proin iaculis purus consequat sem cure.</p>
-        <ul class="services_ul">
-          <li class="services_li">
-            <div class="services_icon icon_1"></div>
-            <h3 class="services_h3">E-Commerce</h3>
-            <p class="services_list_p">
-              Proin iaculis purus consequat sem cure digni ssim. Donec
-              porttitora entum suscipit aenean rhoncus posuere odio in
-              tincidunt.
-            </p>
-          </li>
-          <li class="services_li">
-            <div class="services_icon icon_2"></div>
-            <h3 class="services_h3">Responsive Web</h3>
-            <p class="services_list_p">
-              Proin iaculis purus consequat sem cure digni ssim. Donec
-              porttitora entum suscipit aenean rhoncus posuere odio in
-              tincidunt.
-            </p>
-          </li>
-          <li class="services_li">
-            <div class="services_icon icon_3"></div>
-            <h3 class="services_h3">Web Security</h3>
-            <p class="services_list_p">
-              Proin iaculis purus consequat sem cure digni ssim. Donec
-              porttitora entum suscipit aenean rhoncus posuere odio in
-              tincidunt.
-            </p>
-          </li>
-        </ul>
-      </main>
     </div>
-    <footer class="wrapper_vh">
+    <main class="main">
       <div class="wrapper">
-        <h2 class="footer_h2">Contacts Us</h2>
-        <p class="footer_p">Proin iaculis purus consequat sem cure.</p>
-        <form action="#" class="form">
-          <ul class="input_wrapper">
-            <li class="form_input">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your name*"
-                class="input"
-              />
+        <section>
+          <h1 class="visually-hidden">HIDDEN TITLE</h1>
+          <h2 class="h2 services">Services</h2>
+          <p class="services_p">Proin iaculis purus consequat sem cure.</p>
+          <ul class="services_ul">
+            <li class="services_li icon_1">
+              <h3 class="services_h3">E-Commerce</h3>
+              <p class="services_list_p">
+                Proin iaculis purus consequat sem cure digni ssim. Donec
+                porttitora entum suscipit aenean rhoncus posuere odio in
+                tincidunt.
+              </p>
             </li>
-            <li class="form_input">
-              <input
-                type="email"
-                name="email"
-                placeholder="Your email*"
-                class="input"
-              />
+            <li class="services_li icon_2">
+              <h3 class="services_h3">Responsive Web</h3>
+              <p class="services_list_p">
+                Proin iaculis purus consequat sem cure digni ssim. Donec
+                porttitora entum suscipit aenean rhoncus posuere odio in
+                tincidunt.
+              </p>
             </li>
-            <li class="form_input">
-              <input
-                type="text"
-                name="Subject"
-                placeholder="Subject"
-                class="input"
-              />
-            </li>
-            <li class="form_input">
-              <textarea
-                required
-                name="text"
-                cols="30"
-                rows="10"
-                class="textarea"
-                placeholder="Your message*"
-              ></textarea>
+            <li class="services_li icon_3">
+              <h3 class="services_h3">Web Security</h3>
+              <p class="services_list_p">
+                Proin iaculis purus consequat sem cure digni ssim. Donec
+                porttitora entum suscipit aenean rhoncus posuere odio in
+                tincidunt.
+              </p>
             </li>
           </ul>
-          <input type="submit" value="Send message" class="sumbit_button" />
-        </form>
+        </section>
       </div>
-    </footer>
+      <!-- </main> -->
+      <div class="wrapper_vh">
+        <div class="wrapper">
+          <section>
+            <h2 class="footer_h2">Contacts Us</h2>
+            <p class="footer_p">Proin iaculis purus consequat sem cure.</p>
+            <form action="#" class="form">
+              <div class="form_wrapper">
+                <ul class="input_wrapper">
+                  <li class="form_input">
+                    <input
+                      required
+                      type="text"
+                      name="name"
+                      placeholder="Your name*"
+                      class="input"
+                    />
+                  </li>
+                  <li class="form_input">
+                    <input
+                      required
+                      type="email"
+                      name="email"
+                      placeholder="Your email*"
+                      class="input"
+                    />
+                  </li>
+                  <li class="form_input">
+                    <input
+                      type="text"
+                      name="Subject"
+                      placeholder="Subject"
+                      class="input"
+                    />
+                  </li>
+                </ul>
+                <textarea
+                  required
+                  name="text"
+                  cols="30"
+                  rows="10"
+                  class="textarea"
+                  placeholder="Your message*"
+                ></textarea>
+              </div>
+              <input
+                required
+                type="submit"
+                value="Send message"
+                class="sumbit_button"
+              />
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
