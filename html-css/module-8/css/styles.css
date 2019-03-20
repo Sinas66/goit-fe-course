@@ -79,6 +79,10 @@ body {
   font-size: 1.875rem;
 }
 
+.h1 {
+  margin-bottom: 19px;
+}
+
 .header_p {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 300;
@@ -232,12 +236,17 @@ body {
   .h1 {
     font-size: 3.25rem;
     width: 500px;
+    margin-bottom: 41px;
   }
   .header {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
     margin: 38px auto 152px;
+  }
+
+  .header_p {
+    margin-bottom: 35px;
   }
 
   .nav_ul {
