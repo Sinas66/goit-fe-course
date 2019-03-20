@@ -48,7 +48,6 @@ body {
   display: flex;
   list-style: none;
   justify-content: center;
-  flex-wrap: wrap;
   margin: 20px 0px 117px;
 }
 
@@ -253,7 +252,8 @@ body {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    margin: 38px auto 152px;
+    margin: 0px auto 152px;
+    padding-top: 38px;
   }
 
   .partner_h2 {
