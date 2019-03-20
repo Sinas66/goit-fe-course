@@ -94,23 +94,24 @@ body {
 }
 
 .header_button {
+  display: block;
   background-color: #ff4e50;
   min-height: 40px;
   border-radius: 20px;
   max-width: 280px;
-  border-style: none;
   font-size: 0.875rem;
   font-weight: 700;
-  color: #fff;
   cursor: pointer;
   padding: 0 5px;
+  line-height: 40px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
 }
 
 .header_button:hover,
 .header_button:focus {
   background-color: transparent;
   border: 2px solid #ff4e50;
-  color: #fff;
 }
 
 /* MAIN */
