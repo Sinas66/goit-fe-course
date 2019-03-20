@@ -17,7 +17,7 @@ body {
 
 /* HEAD */
 .wrapper_slider {
-  min-width: 320px;
+  /* min-width: 320px; */
   margin: 0 auto;
   background-image: url(../img/Header_mobile.png),
     linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
@@ -29,7 +29,7 @@ body {
 }
 
 .wrapper {
-  min-width: 280px;
+  /* min-width: 280px; */
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -97,14 +97,15 @@ body {
 
 .header_button {
   background-color: #ff4e50;
-  height: 40px;
+  min-height: 40px;
   border-radius: 20px;
-  width: 280px;
+  max-width: 280px;
   border-style: none;
   font-size: 0.875rem;
   font-weight: 700;
   color: #fff;
   cursor: pointer;
+  padding: 0 5px;
 }
 
 .header_button:hover,
@@ -216,16 +217,17 @@ body {
 
 .partner_button {
   background-color: #fff;
-  height: 40px;
+  min-height: 40px;
   border-radius: 20px;
   border: 2px solid #ff4e50;
-  width: 280px;
+  max-width: 280px;
   font-size: 0.875rem;
   font-weight: 700;
   color: #ff4e50;
   cursor: pointer;
   display: block;
   margin: 0 auto;
+  padding: 0 5px;
 }
 
 .partner_button:focus,
@@ -257,7 +259,7 @@ body {
   }
 
   .header_button {
-    width: 226px;
+    max-width: 226px;
   }
 
   .partner_h2 {
@@ -279,7 +281,7 @@ body {
   }
 
   .partner_button {
-    width: 193px;
+   max-width: 193px;
     margin-bottom: 73px;
   }
 
