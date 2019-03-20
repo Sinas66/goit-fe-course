@@ -123,13 +123,14 @@ body {
   padding-top: 67px;
   margin-bottom: 40px;
   max-width: 477px;
+  margin: 0 auto;
 }
 
-.partner {
+/* .partner {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .partner_h2 {
   text-align: center;
@@ -212,6 +213,7 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 300;
   color: #666666;
+  font-size: 0.875rem;
 }
 
 .partner_button {
@@ -224,6 +226,8 @@ body {
   font-weight: 700;
   color: #ff4e50;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 .partner_button:focus,
@@ -265,6 +269,13 @@ body {
     max-height: 550px;
     align-content: center;
   }
+
+  .partner_button {
+    width: 193px;
+    margin-bottom: 73px;
+  }
+
+  
 }
 
 @media screen and (min-width: 940px) {
@@ -272,14 +283,20 @@ body {
     max-width: 940px;
   }
 
+  .main {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
   .partner_ul {
     flex-flow: row wrap;
     max-height: 550px;
     align-content: center;
+    justify-content: space-between;
   }
 
   .partner_li:not(:nth-last-of-type(1)) {
-    margin-right: 20px;
+    /* margin-right: 20px; */
   }
 
   .partner_li:nth-of-type(1) {
