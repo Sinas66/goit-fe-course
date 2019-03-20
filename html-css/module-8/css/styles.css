@@ -250,8 +250,8 @@ body {
   }
 
   .header {
+    justify-content: space-around;
     flex-direction: row-reverse;
-    justify-content: space-between;
     align-items: center;
     margin: 0px auto 138px;
     padding-top: 38px;
@@ -288,6 +288,10 @@ body {
 @media screen and (min-width: 940px) {
   .wrapper {
     max-width: 940px;
+  }
+
+  .header {
+    justify-content: space-between;
   }
 
   .main {
