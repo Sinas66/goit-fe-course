@@ -183,7 +183,7 @@
 /* OUR TEAM */
 
 .meet_team {
-  width: 980px;
+  width: 100%;
   text-align: center;
   color: #999999;
   font-size: 15px;
@@ -368,4 +368,10 @@
 
 .icon:hover {
   fill: #f38181;
+}
+
+.nav_icon {
+  width: 18px;
+  height: 18px;
+  fill: #793333;
 }
