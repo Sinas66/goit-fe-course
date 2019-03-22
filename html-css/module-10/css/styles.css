@@ -230,8 +230,8 @@
     rgba(252, 227, 138, 0.9),
     rgba(243, 129, 129, 0.9)
   );
-  width: 380px;
-  height: 470px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -240,7 +240,7 @@
 }
 
 .team_social {
-  width: 224px;
+  width: 60%;
   display: flex;
   justify-content: space-between;
 }
@@ -252,18 +252,13 @@
   background-color: #fce38a;
   position: relative;
   transition: background-color 0.3s linear;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 26px;
 }
 
 .team_social_a:hover {
   background-color: #95e1d3;
-}
-
-.team_social_a {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 26px;
-  display: block;
-
 }
 
 .facebook {
@@ -325,7 +320,7 @@
 }
 
 .footer_a {
-  color: #f38181;
+  color: #793333;
   text-decoration: none;
 }
 
