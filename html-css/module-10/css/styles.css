@@ -429,3 +429,7 @@ img {
   height: 18px;
   fill: #fff;
 }
+
+.nav_icon:hover {
+  fill: #fce38a;
+}
