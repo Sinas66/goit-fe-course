@@ -11,6 +11,21 @@
   font-family: "Roboto", "Arial", serif;
 }
 
+.header_background {
+  height: 1000px;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(252, 227, 138, 0.9),
+      rgba(243, 129, 129, 0.9)
+    ),
+    url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+  }
+
 .header {
   padding-top: 25px;
   display: flex;
@@ -29,6 +44,7 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   align-content: flex-end;
+  
 }
 
 .nav_item {
@@ -45,7 +61,7 @@
 .nav_a {
   font-family: "Montserrat", "Arial", serif;
   text-decoration: none;
-  color: #95e1d3;
+  color: #fff;
 }
 
 .logo {
@@ -65,6 +81,44 @@
 }
 
 /* HEADER HOVER */
+.welcome_section {
+  margin-bottom: 276px;
+  color: #fff;
+}
+
+.welcome_p {
+  font-family: "Kaushan Script", "Arial", serif;
+  font-size: 72px;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.h1 {
+  font-family: "Montserrat", "Arial", serif;
+  font-size: 150px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto 125px;
+  text-transform: uppercase;
+  width: 830px;
+}
+
+.welcome_a {
+  display: block;
+  font-family: "Montserrat", "Arial", serif;
+  font-size: 14px;
+  line-height: 35px;
+  text-align: center;
+  font-weight: bold;
+  width: 160px;
+  height: 40px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid #fff;
+  box-sizing: border-box;
+}
+
 .logo:hover,
 .nav_a:hover {
   color: #f38181;
@@ -117,15 +171,12 @@
   margin-bottom: 64px;
 }
 
-
 .before_h2 {
   font-family: "Kaushan Script", "Arial", serif;
   font-size: 24px;
   text-align: center;
   margin-bottom: 14px;
 }
-
-
 
 .meet_our_team_h {
   margin-bottom: 41px;
@@ -277,7 +328,6 @@
   background-image: url(../img/path.svg);
 }
 
-
 /* TEAM CONTENT */
 .team_img {
   transition: transform 0.2s linear;
@@ -302,11 +352,9 @@
 }
 
 /* FOOTER */
-.footer_hr {
-  width: 100%;
-}
 
 .footer {
+  border-top: 1px solid #e5e5e5;
   display: flex;
   justify-content: space-between;
   height: 62px;
@@ -354,11 +402,6 @@
   background-color: #f38181;
 }
 
-
-
-
-
-
 /* icon */
 .icon {
   fill: #95e1d3;
@@ -373,5 +416,5 @@
 .nav_icon {
   width: 18px;
   height: 18px;
-  fill: #793333;
+  fill: #fff;
 }
