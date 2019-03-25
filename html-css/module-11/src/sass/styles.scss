@@ -1,0 +1,88 @@
+/*
+   Import partials below
+*/
+@import './normalize';
+@import './utils/variables.scss';
+@import './base/fonts.scss';
+@import './utils/mixins.scss';
+
+body {
+  font-size: 16px;
+}
+
+/* HEADER */
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: $roboto;
+}
+
+.header_background {
+  height: 1000px;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    ),
+    url(../images/header.jpg);
+  @include background;
+  position: absolute;
+  z-index: -1;
+}
+
+.header {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  margin-bottom: 120px;
+}
+
+.nav {
+  max-width: 1090px;
+}
+
+.ul {
+  @include flex-end;
+  align-content: flex-end;
+  list-style: none;
+  align-content: flex-end;
+}
+
+.nav_item {
+  margin-right: 55px;
+}
+
+.nav_item:nth-last-of-type(1) {
+  margin-right: 0px;
+}
+
+/* HEADER LINK */
+
+.logo,
+.nav_a {
+  @include header;
+  @include flex-center;
+@include 
+  .nav_icon:hover{
+    fill: $gold;
+  }
+}
+
+.nav_icon {
+  width: 18px;
+  height: 18px;
+}
+
+
+
+
+
+
+.icon {
+ @include icon;
+ &:hover {
+    fill: $red;
+ }
+ }
+ 

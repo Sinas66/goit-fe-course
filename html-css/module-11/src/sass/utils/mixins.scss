@@ -1,0 +1,55 @@
+@mixin flex-between {
+    display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+@mixin flex-around {
+    display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+@mixin flex-end {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+@mixin flex-center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+@mixin flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@mixin background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin header {
+    
+    font-family: $montserat;
+    text-decoration: none;
+    color: $white;
+    fill: $white;
+    text-transform: uppercase;
+}
+
+@mixin header_a {
+    position: relative;
+    display: flex;
+    justify-content: center;    
+}
+
+@mixin icon {
+    fill: $aqua;
+    width: 30px;
+    height: 30px;
+}
