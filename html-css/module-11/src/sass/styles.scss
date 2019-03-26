@@ -26,6 +26,23 @@ img {
 .header_background {
   height: 1000px;
   width: 100%;
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(243, 129, 129, 0.9)),
+      to(rgba(252, 227, 138, 0.9))
+    ),
+    url(../images/header.jpg);
+  background-image: -webkit-linear-gradient(
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    ),
+    url(../images/header.jpg);
+  background-image: -o-linear-gradient(
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    ),
+    url(../images/header.jpg);
   background-image: linear-gradient(
       rgba(243, 129, 129, 0.9),
       rgba(252, 227, 138, 0.9)
@@ -38,9 +55,14 @@ img {
 
 .header {
   padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
   margin-bottom: 120px;
 }
 
@@ -50,7 +72,8 @@ img {
 
 .ul {
   @include flex-end;
-  align-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
   list-style: none;
   align-content: flex-end;
 }
@@ -125,7 +148,10 @@ img {
   text-decoration: none;
   color: $white;
   border: 3px solid $white;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: border .3s linear, color .3s linear;
+  -o-transition: border .3s linear, color .3s linear;
   transition: border .3s linear, color .3s linear;
   &:hover {
     border: 3px solid $red;
@@ -138,6 +164,8 @@ img {
 .logo:hover,
 .nav_a:hover {
   color: $gold;
+  -webkit-transition: color 1s;
+  -o-transition: color 1s;
   transition: color 1s;
 }
 
@@ -158,8 +186,12 @@ img {
 .logo:hover:after,
 .nav_a:hover::after {
   content: '';
+  -webkit-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
   transition-property: width, background-color;
-  transition-duration: 2s;
+  -webkit-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
   background-color: $gold;
   width: 100%;
 }
@@ -229,7 +261,8 @@ img {
 }
 
 .amazing_text {
-  flex-basis: 300px;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
 }
 
 .amazing_h {
@@ -279,7 +312,9 @@ img {
 /* TEAM HOVER */
 
 .team_img_wrapper:hover .test {
-  transform: translate(-10px, -10px);
+  -webkit-transform: translate(-10px, -10px);
+      -ms-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
 }
 
 .team_img_wrapper:hover .team_hover {
@@ -287,11 +322,29 @@ img {
 }
 
 .test {
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  -o-transition: transform 0.3s linear;
   transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
 .team_hover {
   opacity: 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgba(252, 227, 138, 0.9)),
+    to(rgba(243, 129, 129, 0.9))
+  );
+  background-image: -webkit-linear-gradient(
+    rgba(252, 227, 138, 0.9),
+    rgba(243, 129, 129, 0.9)
+  );
+  background-image: -o-linear-gradient(
+    rgba(252, 227, 138, 0.9),
+    rgba(243, 129, 129, 0.9)
+  );
   background-image: linear-gradient(
     rgba(252, 227, 138, 0.9),
     rgba(243, 129, 129, 0.9)
@@ -300,7 +353,11 @@ img {
   height: 100%;
   position: absolute;
   @include flex-center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: opacity 0.4s linear 0.3s;
+  -o-transition: opacity 0.4s linear 0.3s;
   transition: opacity 0.4s linear 0.3s;
 }
 
@@ -315,6 +372,8 @@ img {
   display: block;
   background-color: $gold;
   position: relative;
+  -webkit-transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
   transition: background-color 0.3s linear;
   @include background;
   background-size: auto 26px;
@@ -330,14 +389,20 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   &:hover {
     fill: $bordo;
   }
 }
 
 .team_img {
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
   transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
 .team_h {
@@ -379,7 +444,9 @@ img {
 
 .input_wrapper {
   @include flex-end;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .footer_input {
@@ -405,4 +472,3 @@ img {
 .footer_button:hover {
   background-color: $red;
 }
-
