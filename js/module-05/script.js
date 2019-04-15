@@ -267,36 +267,42 @@
 //   Используй метод reduce.
 // */
 
-const products = {
-    bread: 10,
-    milk: 15,
-    apples: 20,
-    cheese: 30,
-    chicken: 40
-  };
+// const products = {
+//   bread: 10,
+//   milk: 15,
+//   apples: 20,
+//   cheese: 30,
+//   chicken: 40
+// };
 
-  const orderA = {
-    bread: 2,
-    apples: 4,
-    chicken: 1
-  };
+// const orderA = {
+//   bread: 2,
+//   apples: 4,
+//   chicken: 1
+// };
 
-  const orderB = {
-    bread: 1,
-    milk: 2,
-    cheese: 2,
-    apples: 1
-  };
+// const orderB = {
+//   bread: 1,
+//   milk: 2,
+//   cheese: 2,
+//   apples: 1
+// };
 
-  const orderC = {
-    bread: 2,
-    cheese: 2
-  };
+// const orderC = {
+//   bread: 2,
+//   cheese: 2
+// };
 
-  // Вызовы функции для проверки
-  console.log(getTotal(products, orderA)); // 140
-  console.log(getTotal(products, orderB)); // 120
-  console.log(getTotal(products, orderC)); // 80
+// const getTotal = (products, order) => {
+//   let orderMass = Object.keys(order);
+
+//   return orderMass.reduce((acc, el) => (acc += products[el] * order[el]), 0);
+// };
+
+// // Вызовы функции для проверки
+// console.log(getTotal(products, orderA)); // 140
+// console.log(getTotal(products, orderB)); // 120
+// console.log(getTotal(products, orderC)); // 80
 
 // //========================== task 09 =====================
 
@@ -307,113 +313,195 @@ const products = {
 // * Используй метод every или some, никаких for!
 // */
 
-// // Вызовы функции для проверки
+// const isGuestsActive = ([...rest]) => {
+//   let isActive = el => el.active === true;
+//   return rest.every(isActive);
+// };
+
+// // // Вызовы функции для проверки
 // console.log(
-//     isGuestsActive([
-//       { name: "Mango", active: true },
-//       { name: "Poly", active: false },
-//       { name: "Ajax", active: true }
-//     ])
-//   ); // false
+//   isGuestsActive([
+//     { name: "Mango", active: true },
+//     { name: "Poly", active: false },
+//     { name: "Ajax", active: true }
+//   ])
+// ); // false
 
-//   console.log(
-//     isGuestsActive([
-//       { name: "Mango", active: true },
-//       { name: "Poly", active: true },
-//       { name: "Ajax", active: true }
-//     ])
-//   ); // true
+// console.log(
+//   isGuestsActive([
+//     { name: "Mango", active: true },
+//     { name: "Poly", active: true },
+//     { name: "Ajax", active: true }
+//   ])
+// ); // true
 
-//   console.log(
-//     isGuestsActive([
-//       { name: "Mango", active: true },
-//       { name: "Poly", active: true },
-//       { name: "Ajax", active: false }
-//     ])
-//   ); // false
+// console.log(
+//   isGuestsActive([
+//     { name: "Mango", active: true },
+//     { name: "Poly", active: true },
+//     { name: "Ajax", active: false }
+//   ])
+// ); // false
 
 // //========================== ****** task ***** =====================
 
-// const scientist = [{
-//     first: 'Albert',
-//     last: 'Einstein',
-//     year: 1879,
-//     passed: 1955
-// },
-// {
-//     first: 'Isaac',
-//     last: 'Newton',
-//     year: 1643,
-//     passed: 1727
-// },
-// {
-//     first: 'Galileo',
-//     last: 'Galilei',
-//     year: 1564,
-//     passed: 1642
-// },
-// {
-//     first: 'Marie',
-//     last: 'Curie',
-//     year: 1867,
-//     passed: 1934
-// },
-// {
-//     first: 'Johannes',
-//     last: 'Kepler',
-//     year: 1571,
-//     passed: 1630
-// },
-// {
-//     first: 'Nicolaus',
-//     last: 'Copernicus',
-//     year: 1473,
-//     passed: 1543
-// },
-// {
-//     first: 'Max',
-//     last: 'Planck',
-//     year: 1858,
-//     passed: 1947
-// },
-// {
-//     first: 'Katherine',
-//     last: 'Blodgett',
-//     year: 1898,
-//     passed: 1979
-// },
-// {
-//     first: 'Ada',
-//     last: 'Lovelace',
-//     year: 1815,
-//     passed: 1852
-// },
-// {
-//     first: 'Sarah E.',
-//     last: 'Goode',
-//     year: 1855,
-//     passed: 1905
-// },
-// {
-//     first: 'Lise',
-//     last: 'Meitner',
-//     year: 1878,
-//     passed: 1968
-// },
-// {
-//     first: 'Hanna',
-//     last: 'Hammarström',
-//     year: 1829,
-//     passed: 1909
-// }
-// ];
+const scientist = [
+  {
+    first: "Albert",
+    last: "Einstein",
+    year: 1879,
+    passed: 1955
+  },
+  {
+    first: "Isaac",
+    last: "Newton",
+    year: 1643,
+    passed: 1727
+  },
+  {
+    first: "Galileo",
+    last: "Galilei",
+    year: 1564,
+    passed: 1642
+  },
+  {
+    first: "Marie",
+    last: "Curie",
+    year: 1867,
+    passed: 1934
+  },
+  {
+    first: "Johannes",
+    last: "Kepler",
+    year: 1571,
+    passed: 1630
+  },
+  {
+    first: "Nicolaus",
+    last: "Copernicus",
+    year: 1473,
+    passed: 1543
+  },
+  {
+    first: "Max",
+    last: "Planck",
+    year: 1858,
+    passed: 1947
+  },
+  {
+    first: "Katherine",
+    last: "Blodgett",
+    year: 1898,
+    passed: 1979
+  },
+  {
+    first: "Ada",
+    last: "Lovelace",
+    year: 1815,
+    passed: 1852
+  },
+  {
+    first: "Sarah E.",
+    last: "Goode",
+    year: 1855,
+    passed: 1905
+  },
+  {
+    first: "Lise",
+    last: "Meitner",
+    year: 1878,
+    passed: 1968
+  },
+  {
+    first: "Hanna",
+    last: "Hammarström",
+    year: 1829,
+    passed: 1909
+  }
+];
+
 // // 1) отримати масив вчених що народилися в 19 ст
+// const XIX = mass => {
+//   let result = mass.filter(el => el.year >= 1800 && el.year < 1900);
+//   return result;
+// };
+
+// console.log(XIX(scientist));
+
 // // 2) знайти суму років скільки прожили всі вченні
+
+// const wasAlive = mass => {
+//   let result = mass.map(el => `${el.first} ${el.last} прожил ${el.passed - el.year}`);
+//   return result;
+// };
+
+// console.log(wasAlive(scientist));
+
 // // 3) Відсортувати вчених по алфавіту
+
+// const sortByName = (a, b) => {
+//   if (a.first > b.first) {
+//     return 1;
+//   }
+//   if (a.first < b.first) {
+//     return -1;
+//   }
+//   return 0;
+// };
+
+// console.log(scientist);
+
+// console.log(scientist.sort(sortByName));
+
 // // 4) Відсортувати вчених по даті народження
+
+// const sortByYear = (a, b) => {
+//  return a.year - b.year
+// };
+
+// console.log(scientist);
+
+// console.log(scientist.sort(sortByYear));
+
 // // 5) Відсортувати вчених по кількості прожитих років
+
+// const sortByYear = (a, b) => {
+//   return a.passed - a.year - (b.passed - b.year);
+// };
+
+// console.log(scientist);
+
+// console.log(scientist.sort(sortByYear));
+
 // // 6) Видалити з масива вчених що родилися в 15 або 16 або 17 столітті
+
+// const deleteLow = mass => {
+//   mass.forEach(el => {
+//     let a;
+//     el.year >= 1500 && el.year < 1700 ? (a = el) : null;
+//     a != -1 ? mass.splice(a, 1) : null;
+//   });
+
+//   return mass;
+// };
+
+// console.log(scientist);
+// console.log(deleteLow(scientist));
+
 // // 7) Знайти вченого який народився найпізніше.
+
+const birthLate = () => {
+  let result = 0;
+  if (scientist[0].year < result || result === 0) {
+    result = scientist.year;
+    console.log(result);
+  }
+
+  return result;
+};
+
+console.log(scientist.filter(birthLate));
+
 // // 8) Знайти рік народження Albert Einstein
 // // 9) Знайти вчених прізвище яких починається на літеру С
 // // 10) Видалити з масива всіх вчених імя яких починається на A
