@@ -25,7 +25,7 @@ const Gallery = ({ data, LoadMorefn, ShowModal }) => {
 export default Gallery;
 
 Gallery.propTypes = {
-  data: PropTypes.shape().isRequired,
+  data: PropTypes.arrayOf(PropTypes.shape()).isRequired,
   LoadMorefn: PropTypes.func.isRequired,
   ShowModal: PropTypes.func.isRequired,
 };
