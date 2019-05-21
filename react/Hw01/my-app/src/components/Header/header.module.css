@@ -1,0 +1,11 @@
+.header {
+  width: 100%;
+  background: #777;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* .header span {
+  font-size: 40px;
+} */

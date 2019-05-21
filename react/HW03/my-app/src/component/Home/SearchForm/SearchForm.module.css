@@ -1,0 +1,19 @@
+.header {
+  background: pink;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  font-size: 21px;
+  color: black;
+}
+
+.linkActive {
+  font-size: 30px;
+}
