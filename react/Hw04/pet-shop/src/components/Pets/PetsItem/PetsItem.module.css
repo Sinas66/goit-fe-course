@@ -1,0 +1,17 @@
+.pet_a {
+  display: block;
+  text-decoration: none;
+}
+
+.wrapper_img img {
+  display: block;
+  max-width: 300px;
+}
+.item {
+  border: 2px black solid;
+  margin-bottom: 15px;
+}
+.item p {
+  text-align: center;
+  color: black;
+}

@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  background-color: orange;
+  height: 40px;
+  align-items: center;
+}
+
+.link {
+  margin-left: 10px;
+  display: block;
+  background-color: black;
+  color: #ffffff;
+  height: 100%;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+.active {
+  background-color: white;
+  color: black;
+}

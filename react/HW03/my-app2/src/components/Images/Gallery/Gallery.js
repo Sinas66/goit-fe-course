@@ -7,10 +7,6 @@ const Gallery = ({ data, LoadMorefn, ShowModal }) => {
   return (
     <>
       <ul className={styles.gallery}>
-        <link
-          href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet"
-        />
         {data.map(el => (
           <GalleryItem el={el} ShowModal={ShowModal} key={el.id} />
         ))}

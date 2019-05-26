@@ -1,0 +1,49 @@
+.modal_wrapper {
+  width: 100%;
+  height: calc(100vh + 40px);
+  top: -40px;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(42, 40, 40, 0.37);
+}
+.modal {
+  display: flex;
+  flex-flow: column wrap;
+  width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.inputTitle,
+.inputText {
+  min-width: 500px;
+}
+
+button {
+  width: 100px;
+}
+
+.closeModal {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px;
+  top: -15px;
+  position: absolute;
+  right: -15px;
+  border-style: none;
+  cursor: pointer;
+}
+.closeModal:focus,
+.closeModal:active {
+  outline: none;
+}

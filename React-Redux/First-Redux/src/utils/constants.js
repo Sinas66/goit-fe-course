@@ -1,0 +1,9 @@
+export const HOME_COUNTER_INCREMENT = `HOME_COUNTER: INCREMENT`;
+export const HOME_COUNTER_DECREMENT = `HOME_COUNTER: DECREMENT`;
+export const INITIALSTATE = 0;
+export const HOME_COUNTER_A_LOT = 500;
+export const ADD_TODO = 'ADD_TODO';
+export const RANDOM_TODO = 'RANDOM_TODO';
+export const DEL_TODO = 'DEL_TODO';
+export const TODO_COMPLETED = 'TODO_COMPLETED';
+export const EDIT_TODO = 'EDIT_TODO';

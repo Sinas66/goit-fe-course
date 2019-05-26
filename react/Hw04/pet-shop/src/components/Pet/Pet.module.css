@@ -1,0 +1,21 @@
+.wrapp {
+  padding-top: 50px;
+  padding-left: 15px;
+}
+
+.link {
+  display: block;
+  width: 100px;
+  height: 40px;
+  background-color: black;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.5s linear, color 0.5s linear;
+}
+
+.link:hover {
+  background-color: gray;
+  color: black;
+}

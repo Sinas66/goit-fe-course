@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  height: 30px;
+  padding: 10px;
+  background-color: black;
+}
+
+.navLink {
+  color: white;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.navLink:not(:nth-last-of-type(1)) {
+  margin-right: 10px;
+}
+
+.navLink:hover {
+  color: aqua;
+}
+
+.active {
+  color: gold;
+}

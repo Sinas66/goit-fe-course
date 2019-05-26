@@ -840,6 +840,7 @@ img {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
+  -ms-grid-row-align: center;
   align-self: center;
 }
 

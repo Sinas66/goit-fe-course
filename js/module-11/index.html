@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="list"></div>
+    <template id="box">
+      {{#each this}}
+      {{#if done}}
+      <img src="{{ img }}" alt="" />
+      <h1 class="name">Name:{{ name }}</h1>
+      <p class="about">About : {{ about }}</p>
+      {{#if work}}
+      <p class="work">Work: {{ work }}</p>
+      {{/if}}
+      {{/if}}
+      {{/each}}
+    </template>
+
+    <form action="">
+      <input type="text" class="input" />
+      <button class="btn">CLICK</button>
+    </form> -->
+
+    <!-- Доп задание №1 -->
+
+    <!-- Разметка элемента списка -->
+
+    <!-- <template id="box">
+      {{#each this}}
+      <li class="item">
+        <p class="name">
+          <strong>Name: {{ name }}</strong>
+        </p>
+        <p class="quantity">
+          <strong>Quantity: {{ quantity }}</strong>
+        </p>
+      </li>
+      {{/each}}
+    </template>
+
+    <ul class="products"></ul> -->
+
+    <!-- Доп задание №2 -->
+
+    <!-- Разметка поста  -->
+
+    <!-- <template id="box">
+      {{#each this}}
+      <article class="post">
+        <h2 class="title">{{ title }}</h2>
+        <p class="text">{{ text }}</p>
+        {{#if favourite}}<span class="fav-icon"></span>{{/if}}
+      </article>
+      {{/each}}
+    </template>
+
+    <section class="posts"></section> -->
+
+    <!-- Доп задание №3 -->
+
+    <template id="box">
+      <li>
+        <p>First name: {{ name }}</p>
+        <p>Last name: {{ lastName }}</p>
+      </li>
+    </template>
+
+    <div class="container">
+      <div class="row">
+        <form acrion="#" class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input placeholder="First name" id="first_name" type="text" />
+              <label for="first_name"></label>
+            </div>
+            <div class="input-field col s12">
+              <input placeholder="Last Name" id="last_name" type="text" />
+              <label for="last_name"></label>
+            </div>
+            <div class="col s12">
+              <button
+                class="btn waves-effect waves-light"
+                id="submit-btn"
+                type="submit"
+                name="action"
+              >
+                submit
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <ul class="results col s12"></ul>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

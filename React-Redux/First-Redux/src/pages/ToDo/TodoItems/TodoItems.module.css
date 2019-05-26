@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.ul {
+  width: calc(49% - 20px);
+  display: flex;
+  list-style: none;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}

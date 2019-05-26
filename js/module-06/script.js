@@ -146,8 +146,6 @@ class Car {
   }
 
   static getSpecs(value) {
-    // console.log(`${value._maxSpeed}`);
-
     return console.log(
       value._maxSpeed,
       value._speed,
@@ -267,6 +265,11 @@ class Hamburger {
     }
   }
 
+  // removeTopping(topping) {
+  //   if (this._toppings.includes(topping)) {
+  //     this._toppings = this._toppings.filter(el => el !== topping);
+  //   }
+  // }
   /**
    * Получить список toppings
    * @returns {Array} - Массив добавленных topping, содержит значения констант Hamburger.TOPPING_*
@@ -418,6 +421,8 @@ console.log(
   )}`,
   hamburger.getToppings().length
 ); // 1
+
+console.log(hamburger);
 
 /*
   🔔 Обратите внимание на такие моменты:
