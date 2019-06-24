@@ -3,8 +3,10 @@ const { getProduct, createProduct } = require('./products');
 
 const routes = {
   'singup': (req, res) => {
-    if (req.method === 'GET') return getUser(req, res);
     if (req.method === 'POST') return createUser(req, res);
+  },
+  'users': (req, res) => {
+    if (req.method === 'GET') return getUser(req, res);
   },
   'products': (req, res) => {
     if (req.method === 'GET') return getProduct(req, res);
@@ -20,8 +22,13 @@ const getRoute = (req, res) => {
 
   if (url.includes('singup')) {
     console.log(`route:req`, req.body);
-
     routes.singup(req, res);
+    return;
+  }
+
+  if (url.includes('users')) {
+    console.log(`should show users`);
+    routes.users(req, res);
     return;
   }
 

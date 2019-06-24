@@ -42,6 +42,10 @@ const createUser = async (req, res) => {
     }))
     return
   }
+  newId = String(Date.now() + Math.floor(Math.random() * 100))
+  newId = newId.substr(newId.length - 4)
+  user.id = newId
+  console.log(user.id);
 
   fs.writeFileSync(userFilePath, JSON.stringify([...userlist, user]))
 

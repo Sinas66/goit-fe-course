@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import styles from './HomePage.module.css';
 import NewUser from '../components/NewUser/NewUser';
+import UsersList from '../components/AllUsers/AllUsers';
+import ProductList from '../components/Products/ProductsList';
 
-const singup = `http://localhost:8081/singup`;
-const user = `http://localhost:8081/users`;
+const singupUrl = `http://localhost:8081/singup`;
+const usersUrl = `http://localhost:8081/users`;
+const productsUrl = `http://localhost:8081/products`;
 
 class HomePage extends Component {
   state = {
@@ -12,11 +15,50 @@ class HomePage extends Component {
     email: ``,
     phone: ``,
     userCreated: {},
+    isAllInputsFilled: true,
+    userAlreadyExist: false,
+    allUsers: [],
+    products: [],
+  };
+
+  toogleIsAllinputsFilled = () => {
+    this.setState(state => ({
+      isAllInputsFilled: !state.isAllInputsFilled,
+    }));
+  };
+
+  toogleUserAlreadyExist = () => {
+    this.setState(state => ({
+      userAlreadyExist: !state.userAlreadyExist,
+    }));
   };
 
   signUp = e => {
     e.preventDefault();
-    const { username, password, phone, email } = this.state;
+    const {
+      username,
+      password,
+      phone,
+      email,
+      isAllInputsFilled,
+      userAlreadyExist,
+    } = this.state;
+
+    // Если поля пустые то показываем ошибку
+
+    if (username === `` || password === `` || phone === `` || email === ``) {
+      if (isAllInputsFilled) this.toogleIsAllinputsFilled();
+      console.log(`Error: All fields must be filled`);
+      return;
+    }
+    if (
+      (username !== `` || password !== `` || phone !== `` || email !== ``) &&
+      !isAllInputsFilled
+    ) {
+      console.log(`OK: ALL fields are filled`);
+      this.toogleIsAllinputsFilled();
+    }
+
     const newUser = {
       username,
       password,
@@ -25,7 +67,7 @@ class HomePage extends Component {
     };
     console.log(`its a new user`, newUser);
 
-    fetch(singup, {
+    fetch(singupUrl, {
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
       cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
       headers: {
@@ -36,41 +78,94 @@ class HomePage extends Component {
       .then(response => response.json())
       .then(data => {
         console.log(`resp from server`, data);
+        if (data.status === 'error') {
+          console.log(`error exist`);
+
+          if (!userAlreadyExist) {
+            this.toogleUserAlreadyExist();
+          }
+          return;
+        }
+
+        if (userAlreadyExist) {
+          this.toogleUserAlreadyExist();
+        }
 
         this.setState({
           userCreated: { ...data },
         });
+        setTimeout(() => {
+          this.setState({
+            userCreated: {},
+          });
+        }, 1500);
       });
   };
 
   showUsers = () => {
-    return fetch(user)
-      .then(resp => console.log(`resp`, resp))
+    return fetch(usersUrl)
+      .then(resp => resp.json())
+      .then(data => {
+        console.log(`resp of users`, data);
+
+        this.setState({
+          allUsers: [...data],
+        });
+      })
       .catch(data => console.error(`error blyat`, data));
   };
 
+  showProducts = () => {
+    console.log(`get products`);
+
+    return fetch(productsUrl)
+      .then(resp => resp.json())
+      .then(data => {
+        console.log(`resp of products`, data);
+
+        this.setState({
+          products: [...data],
+        });
+      })
+      .catch(data => console.error(`error blyat`, data));
+  };
+
+  closeUserList = () => {
+    this.setState({ allUsers: [] });
+  };
+
+  closeProductList = () => {
+    this.setState({ products: [] });
+  };
+
   onInputLogin = e => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     this.setState({ username: e.target.value });
   };
 
   onInputPassword = e => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     this.setState({ password: e.target.value });
   };
 
   onInputEmail = e => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     this.setState({ email: e.target.value });
   };
 
   onInputPhone = e => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     this.setState({ phone: e.target.value });
   };
 
   render() {
-    const { userCreated } = this.state;
+    const {
+      userCreated,
+      isAllInputsFilled,
+      allUsers,
+      userAlreadyExist,
+      products,
+    } = this.state;
     return (
       <>
         <form action="" className={styles.form}>
@@ -108,11 +203,32 @@ class HomePage extends Component {
               Регистрация
             </button>
             <button type="button" onClick={this.showUsers}>
-              Пользователи
+              Показать всех пользователей
             </button>
           </div>
         </form>
-        <NewUser userCreated={userCreated} />
+
+        {!isAllInputsFilled && <p>Заполните все поля</p>}
+        {userAlreadyExist && (
+          <p>Пользователь с таким логином уже существует!</p>
+        )}
+        {userCreated.status === 'success' && (
+          <NewUser userCreated={userCreated.user} />
+        )}
+        {allUsers.length !== 0 && (
+          <UsersList allUsers={allUsers} closeUserList={this.closeUserList} />
+        )}
+        <div>
+          <button type="button" onClick={this.showProducts}>
+            Показать пиццу?
+          </button>
+          {products.length !== 0 && (
+            <ProductList
+              data={products}
+              closeProductList={this.closeProductList}
+            />
+          )}
+        </div>
       </>
     );
   }

@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const NewUser = ({ userCreated }) => {
-  if (!userCreated) return null;
-  console.log(userCreated);
+  // if (!userCreated) return null;
 
   return (
     <div>
-      <p>{userCreated.username}</p>
+      <h2>Вы Успешно создали пользователя!</h2>
+      <p>Ваш логин {userCreated.username}</p>
     </div>
   );
 };
