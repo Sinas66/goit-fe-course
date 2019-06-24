@@ -2,7 +2,7 @@ const { getUser, createUser } = require('./users');
 const { getProduct, createProduct } = require('./products');
 
 const routes = {
-  'singup': (req, res) => {
+  'signup': (req, res) => {
     if (req.method === 'POST') return createUser(req, res);
   },
   'users': (req, res) => {
@@ -20,9 +20,9 @@ const routes = {
 const getRoute = (req, res) => {
   const url = req.url;
 
-  if (url.includes('singup')) {
+  if (url.includes('signup')) {
     console.log(`route:req`, req.body);
-    routes.singup(req, res);
+    routes.signup(req, res);
     return;
   }
 

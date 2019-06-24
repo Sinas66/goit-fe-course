@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
+const randomId = require(`../../utils/randomId`)
 
 const filePath = path.resolve(__dirname, `../../db/users.json`)
 const readFileAsync = promisify(fs.readFile);
@@ -42,10 +43,8 @@ const createUser = async (req, res) => {
     }))
     return
   }
-  newId = String(Date.now() + Math.floor(Math.random() * 100))
-  newId = newId.substr(newId.length - 4)
-  user.id = newId
-  console.log(user.id);
+
+  user.id = randomId()
 
   fs.writeFileSync(userFilePath, JSON.stringify([...userlist, user]))
 
