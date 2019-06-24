@@ -28,6 +28,14 @@ const Nav = () => (
     >
       Slider
     </NavLink>
+    <NavLink
+      exact
+      to="/shop"
+      className={styles.link}
+      activeClassName={styles.active}
+    >
+      Shop
+    </NavLink>
   </nav>
 );
 export default Nav;
