@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './ProductItem.module.css';
 
 function ProductItem({ el }) {
-  console.log(`productItem`, el);
+  // console.log(`productItem`, el);
 
   return (
     <li className={styles.li}>

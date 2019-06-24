@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import UsersItem from './AllUsersItem/AllUsersItem';
 
 function UsersList({ allUsers, closeUserList }) {
-  console.log(allUsers);
+  // console.log(allUsers);
 
   return (
     <div>

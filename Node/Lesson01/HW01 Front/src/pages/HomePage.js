@@ -4,7 +4,7 @@ import NewUser from '../components/NewUser/NewUser';
 import UsersList from '../components/AllUsers/AllUsers';
 import ProductList from '../components/Products/ProductsList';
 
-const singupUrl = `http://localhost:8081/singup`;
+const signupUrl = `http://localhost:8081/signup`;
 const usersUrl = `http://localhost:8081/users`;
 const productsUrl = `http://localhost:8081/products`;
 
@@ -67,7 +67,7 @@ class HomePage extends Component {
     };
     console.log(`its a new user`, newUser);
 
-    fetch(singupUrl, {
+    fetch(signupUrl, {
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
       cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
       headers: {
@@ -103,7 +103,7 @@ class HomePage extends Component {
   };
 
   showUsers = () => {
-    return fetch(usersUrl)
+    fetch(usersUrl)
       .then(resp => resp.json())
       .then(data => {
         console.log(`resp of users`, data);
